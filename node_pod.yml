@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: hello-pod
+  labels:
+    app: hello
+    os: linux
+    lang: node
+spec:
+  containers:
+    - name: hello-container
+      image: gusdn3477/hello
+      ports:
+      - containerPort: 8000
